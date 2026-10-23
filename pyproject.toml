@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liqui-dach"
+version = "1.0.0"
+description = "DACH Liquiditätsplaner & Cashflow-Forecaster 2026 (Rollierende 13-Wochen-Planung, CCC & StaRUG § 1)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "DACH Digitalwerk", email = "info@dachdigitalwerk.github.io"}
+]
+keywords = [
+    "liquiditaetsplan",
+    "cashflow",
+    "13-wochen-liquiditaetsplan",
+    "starug",
+    "fruehwarnsystem",
+    "idw-s11",
+    "working-capital",
+    "cash-conversion-cycle",
+    "dso",
+    "dpo",
+    "dio",
+    "kontokorrent",
+    "inso-15b",
+    "art-725a-or",
+    "urg-oesterreich",
+    "kmu",
+    "b2b"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Legal Industry",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.scripts]
+dach-liqui = "liqui_dach.cli:main"
+
+[project.urls]
+Homepage = "https://dachdigitalwerk.github.io/liquiditaetsplaner-cashflow-rechner/"
+Documentation = "https://dachdigitalwerk.github.io/13-wochen-liquiditaetsplanung-muster-vorlage.html"
+Repository = "https://github.com/DACHDigitalwerk/liquiditaetsplaner-cashflow-rechner-dach"
+Issues = "https://github.com/DACHDigitalwerk/liquiditaetsplaner-cashflow-rechner-dach/issues"
